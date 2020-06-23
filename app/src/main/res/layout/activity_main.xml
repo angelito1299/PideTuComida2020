@@ -16,7 +16,8 @@
         app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
         app:layout_constraintEnd_toEndOf="@+id/btnRegistrar"
         app:layout_constraintStart_toStartOf="@+id/btnRegistrar"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onClick"/>
 
     <Button
         android:id="@+id/btnRegistrar"
@@ -27,6 +28,7 @@
         android:text="Regístrarse"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSesion" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSesion"
+        android:onClick="onClick"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
