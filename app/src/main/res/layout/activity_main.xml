@@ -7,19 +7,19 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/IniciarSe"
+        android:id="@+id/btnSesion"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="379dp"
         android:layout_marginBottom="13dp"
         android:text="Iniciar Sesión"
-        app:layout_constraintBottom_toTopOf="@+id/Registrar"
-        app:layout_constraintEnd_toEndOf="@+id/Registrar"
-        app:layout_constraintStart_toStartOf="@+id/Registrar"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegistrar"
+        app:layout_constraintStart_toStartOf="@+id/btnRegistrar"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Registrar"
+        android:id="@+id/btnRegistrar"
         android:layout_width="265dp"
         android:layout_height="0dp"
         android:layout_marginStart="62dp"
@@ -27,6 +27,6 @@
         android:text="Regístrarse"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IniciarSe" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSesion" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
