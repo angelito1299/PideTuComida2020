@@ -20,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
             Intent miIntent = new Intent(MainActivity.this,Login.class);
             startActivity(miIntent);
         }else{
-
+            Intent miIntent2 = new Intent(MainActivity.this,RegistrarUsuarios.class);
+            startActivity(miIntent2);
         }
 
     }
