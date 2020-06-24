@@ -4,31 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorRojo"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btnSesion"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="379dp"
-        android:layout_marginBottom="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="onClick"
         android:text="Iniciar Sesión"
         app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
-        app:layout_constraintEnd_toEndOf="@+id/btnRegistrar"
-        app:layout_constraintStart_toStartOf="@+id/btnRegistrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="onClick"/>
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/btnRegistrar"
-        android:layout_width="265dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="62dp"
-        android:layout_marginBottom="179dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button_rounded_border"
+        android:onClick="onClick"
         android:text="Regístrarse"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSesion"
-        android:onClick="onClick"/>
+        app:layout_constraintTop_toBottomOf="@+id/btnSesion" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
