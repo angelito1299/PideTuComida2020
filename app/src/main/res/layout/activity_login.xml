@@ -6,4 +6,72 @@
     android:layout_height="match_parent"
     tools:context=".Login">
 
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="204dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginBottom="51dp"
+        android:text="Iniciar Sesion"
+        app:layout_constraintBottom_toTopOf="@+id/btnRecuperarContra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:id="@+id/btnRecuperarContra"
+        android:layout_width="194dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="82dp"
+        android:text="¿Olvide mi contraseña?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="293dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="61dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginBottom="28dp"
+        android:text="Usuario"
+        app:layout_constraintBottom_toTopOf="@+id/edtUsuario"
+        app:layout_constraintStart_toStartOf="@+id/edtUsuario"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="12dp"
+        android:text="Contraseña"
+        app:layout_constraintBottom_toTopOf="@+id/edtPassword"
+        app:layout_constraintStart_toStartOf="@+id/edtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtUsuario" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

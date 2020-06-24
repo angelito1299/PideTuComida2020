@@ -8,23 +8,23 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-   Button btnSesion,btnRegitrar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
     }
-    public void onClick(View view){
-        Intent miIntent= null;
-        if(view.getId()==btnSesion.getId()){
-          miIntent = new Intent(MainActivity.this,Login.class);
-            startActivity(miIntent);
-        }else{
-          miIntent = new Intent(MainActivity.this,RegistrarUsuarios.class);
-            startActivity(miIntent);
+    public void onClick(View v){
+        Intent miIntent=null;
+        switch (v.getId()){
+            case R.id.btnSesion:
+                miIntent=new Intent(MainActivity.this,Login.class);
+                break;
+            case R.id.btnRegistrar:
+                miIntent=new Intent(MainActivity.this,RegistrarUsuarios.class);
+                break;
         }
-
+         startActivity(miIntent);
     }
 
 }
