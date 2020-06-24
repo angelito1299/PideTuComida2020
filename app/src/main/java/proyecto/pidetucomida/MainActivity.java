@@ -16,12 +16,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void onClick(View view){
+        Intent miIntent= null;
         if(view.getId()==btnSesion.getId()){
-            Intent miIntent = new Intent(MainActivity.this,Login.class);
+          miIntent = new Intent(MainActivity.this,Login.class);
             startActivity(miIntent);
         }else{
-            Intent miIntent2 = new Intent(MainActivity.this,RegistrarUsuarios.class);
-            startActivity(miIntent2);
+          miIntent = new Intent(MainActivity.this,RegistrarUsuarios.class);
+            startActivity(miIntent);
         }
 
     }
