@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorRojo"
+    android:background="@drawable/fondo"
     tools:context=".MainActivity">
 
     <Button
@@ -15,7 +15,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/button_rounded"
+        android:background="@drawable/button_rounded_border"
         android:onClick="onClick"
         android:text="Iniciar Sesión"
         app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
